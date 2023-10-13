@@ -1,3 +1,4 @@
+import java.util.Scanner;
 public class Estudiante {
     private  int matricula=0;
     private int cedula=0;
@@ -15,10 +16,13 @@ public class Estudiante {
         this.materia3=materia3;
     }
 
-public void imprimirDatos(){
-    System.out.println();
+    public void imprimirDatos( int numEstudiante){
+        System.out.println("El nombre del estudiante"+numEstudiante+"es:"+nombre);
+        System.out.println("La matricula es:"+matricula);
+        System.out.println("La cedula es:"+cedula);
+        System.out.println("Las materias seleccionadas son: 1."+materia1+" 2."+materia2+" 3."+materia3);
+    }
 
-}
 
     public int getMatricula() {
         return matricula;
@@ -51,7 +55,6 @@ public void imprimirDatos(){
     public void setMateria1(Materia materia1) {
         this.materia1 = materia1;
     }
-
     public Materia getMateria2() {
         return materia2;
     }
