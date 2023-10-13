@@ -29,7 +29,6 @@ public class Estudiante {
     }
 
 
-
     public int getMatricula() {
         return matricula;
     }
@@ -85,6 +84,5 @@ public class Estudiante {
     public void setMateria3(Materia materia3) {
         this.materia3 = materia3;
     }
-
 
 }

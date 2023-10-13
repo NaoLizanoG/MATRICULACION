@@ -53,6 +53,7 @@ public class Main {
         System.out.println("Ingrese la cedula: ");
         int cedula = sc.nextInt();
 
+
         estudiante1.setMatricula(matricula);
         estudiante1.setCedula(cedula);
         estudiante1.setNombre(nombre);

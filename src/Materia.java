@@ -1,3 +1,5 @@
+import java.util.Scanner;
+
 public class Materia {
     private String nombre="";
     private int codigo=0;
@@ -23,6 +25,11 @@ public class Materia {
         System.out.println("La materia tiene "+numhoras+" horas");
     }
 
+        public void ingresarProfesor(){
+            Scanner sc = new Scanner(System.in);
+            System.out.println("Ingrese el nombre del profesor: ");
+            profesor1.setNombre()=sc.next();
+        }
 
     public String getNombre() {
         return nombre;
@@ -63,6 +70,8 @@ public class Materia {
     public void setProfesor2(Profesor profesor2) {
         this.profesor2 = profesor2;
     }
+
+
 }
 
 
