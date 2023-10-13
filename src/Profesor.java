@@ -1,7 +1,13 @@
 public class Profesor {
     private String nombre="";
-    private int cedula=0;
+    private String celular="";
     private int codigo=0;
+
+    public void mostrarProfesor (int numProfesor){
+        System.out.println("El profesor de la materia "+numProfesor+" es: "+nombre);
+        System.out.println("El codigo del maestro es: "+codigo);
+        System.out.println("El telefono del maestro es "+celular);
+    }
 
     public String getNombre() {
         return nombre;
@@ -11,12 +17,12 @@ public class Profesor {
         this.nombre = nombre;
     }
 
-    public int getCedula() {
-        return cedula;
+    public String getCelular() {
+        return celular;
     }
 
-    public void setCedula(int cedula) {
-        this.cedula = cedula;
+    public void setCelular(String celular) {
+        this.celular = celular;
     }
 
     public int getCodigo() {

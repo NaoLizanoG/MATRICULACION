@@ -5,6 +5,13 @@ public class Materia {
     private Profesor profesor1;
     private Profesor profesor2;
 
+    public void mostrarMaterias(int numMateria){
+        System.out.println("La materia "+numMateria+" es: "+nombre);
+        System.out.println("El codigo es: "+codigo);
+        System.out.println("La materia tiene "+numhoras+" horas");
+    }
+
+
     public String getNombre() {
         return nombre;
     }
