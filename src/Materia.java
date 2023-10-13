@@ -5,6 +5,18 @@ public class Materia {
     private Profesor profesor1;
     private Profesor profesor2;
 
+
+    public Materia(){
+    }
+
+    public Materia(String nombre, int codigo, int numhoras, Profesor profesor1, Profesor profesor2) {
+        this.nombre = nombre;
+        this.codigo = codigo;
+        this.numhoras = numhoras;
+        this.profesor1 = profesor1;
+        this.profesor2 = profesor2;
+    }
+
     public void mostrarMaterias(int numMateria){
         System.out.println("La materia "+numMateria+" es: "+nombre);
         System.out.println("El codigo es: "+codigo);

@@ -8,6 +8,10 @@ public class Estudiante {
     private Materia materia2;
     private Materia materia3;
 
+    public Estudiante(){
+
+    }
+
     public Estudiante(int matricula, int cedula, String nombre, String apellido, Materia materia1, Materia materia2, Materia materia3){
         this.cedula=cedula;
         this.matricula=matricula;
@@ -19,10 +23,11 @@ public class Estudiante {
     }
 
     public void imprimirDatos( int numEstudiante){
-        System.out.println("El nombre del estudiante"+numEstudiante+"es:"+nombre);
+        System.out.println("El nombre del estudiante "+numEstudiante+" es: "+nombre);
         System.out.println("La matricula es:"+matricula);
         System.out.println("La cedula es:"+cedula);
     }
+
 
 
     public int getMatricula() {
@@ -64,6 +69,7 @@ public class Estudiante {
     public void setMateria1(Materia materia1) {
         this.materia1 = materia1;
     }
+
     public Materia getMateria2() {
         return materia2;
     }

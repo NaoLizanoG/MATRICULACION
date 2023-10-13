@@ -3,8 +3,18 @@ public class Profesor {
     private String celular="";
     private int codigo=0;
 
-    public void mostrarProfesor (int numProfesor){
-        System.out.println("El profesor de la materia "+numProfesor+" es: "+nombre);
+
+    public Profesor(){
+
+    }
+    public Profesor(String nombre, String celular, int codigo) {
+        this.nombre = nombre;
+        this.celular = celular;
+        this.codigo = codigo;
+    }
+
+    public void mostrarProfesor (){
+        System.out.println("El profesor de la materia  es: "+nombre);
         System.out.println("El codigo del maestro es: "+codigo);
         System.out.println("El telefono del maestro es "+celular);
     }
