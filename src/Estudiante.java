@@ -8,7 +8,7 @@ public class Estudiante {
     private Materia materia2;
     private Materia materia3;
 
-    public Estudiante(int matricula, int cedula, String nombre, Materia materia1, Materia materia2, Materia materia3){
+    public Estudiante(int matricula, int cedula, String nombre, String apellido, Materia materia1, Materia materia2, Materia materia3){
         this.cedula=cedula;
         this.matricula=matricula;
         this.nombre=nombre;
@@ -47,6 +47,14 @@ public class Estudiante {
 
     public void setNombre(String nombre) {
         this.nombre = nombre;
+    }
+
+    public String getApellido() {
+        return apellido;
+    }
+
+    public void setApellido(String apellido) {
+        this.apellido = apellido;
     }
 
     public Materia getMateria1() {

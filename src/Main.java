@@ -29,7 +29,7 @@ public class Main {
         materia3.setNumhoras(2);
         Profesor profesor3=new Profesor();
         profesor3.setNombre("Carla Malta");
-        profesor3.setCelular("96359878");
+        profesor3.setCelular("096359878");
         profesor3.setCodigo(25);
 
 
@@ -37,12 +37,14 @@ public class Main {
         Scanner sc = new Scanner(System.in);
         System.out.println("Ingrese el nombre del estudiante: ");
         String nombre = sc.next();
+        System.out.println("Ingrese el apellido del estudiante: ");
+        String apellido = sc.next();
         System.out.println("Ingrese la matricula: ");
         int matricula = sc.nextInt();
         System.out.println("Ingrese la cedula: ");
         int cedula = sc.nextInt();
 
-        Estudiante estudiante1 = new Estudiante(matricula,cedula,nombre, materia1, materia2, materia3);
+        Estudiante estudiante1 = new Estudiante(matricula,cedula,nombre,apellido, materia1, materia2, materia3);
         estudiante1.imprimirDatos(1);
         System.out.println("---------------------------------------------------------");
         materia1.mostrarMaterias(1);
