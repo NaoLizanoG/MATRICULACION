@@ -41,22 +41,17 @@ public class Estudiante {
         System.out.println("La cedula es:"+cedula);
     }
 
-    public void mostrarDatosMaterias(Materia materia, int i, int a){
+    public void mostrarDatosMaterias(Materia materia){
 
-       switch (i){
-            case 1:
-                materia.mostrarMaterias(materia, 1,a );
-                break;
-            case 2:
-                materia.mostrarMaterias(materia, 2, a);
-                break;
-            case 3:
-                 materia.mostrarMaterias(materia,3,a);
-                break;
-           default:
-               System.out.println("Número no válido");
-               break;
-    }}
+                materia.mostrarMaterias(materia, 1, 1 );
+
+                materia.mostrarMaterias(materia, 2, 1);
+
+         materia.mostrarMaterias(materia,3,1);
+
+    }
+
+
 
     public int getMatricula() {
         return matricula;
