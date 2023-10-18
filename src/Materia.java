@@ -12,14 +12,14 @@ public class Materia {
     public Materia(){
     }
 
-    public Materia(String nombre, int codigo, int numhoras, Profesor profesor1, Profesor profesor2, Profesor profesor3) {
+    /*public Materia(String nombre, int codigo, int numhoras, Profesor profesor1, Profesor profesor2, Profesor profesor3) {
         this.nombre = nombre;
         this.codigo = codigo;
         this.numhoras = numhoras;
         this.profesor1 = profesor1;
         this.profesor2 = profesor2;
         this.profesor3= profesor3;
-    }
+    }*/
 
     public void ingresarMateria(int m){
         Scanner sc = new Scanner(System.in);
@@ -40,11 +40,21 @@ public class Materia {
         profesor3 = new Profesor();
         profesor3.ingresarProfesor(3);
         }
-    public void mostrarMaterias(int numMateria){
+    public void mostrarMaterias(Materia mater, int numMateria, int numProfesor){
         System.out.println("La materia "+numMateria+" es: "+nombre);
         System.out.println("El codigo es: "+codigo);
         System.out.println("La materia tiene "+numhoras+" horas");
-        System.out.println("Su profesor asignado es"+profesor1);
+        switch (numProfesor) {
+            case 1:
+            System.out.println("Su profesor asignado es " + mater.profesor1.getNombre());
+            break;
+            case 2:
+                System.out.println("Su profesor asignado es " + mater.profesor2.getNombre());
+                break;
+            case 3:
+                System.out.println("Su profesor asignado es " + mater.profesor3.getNombre());
+                break;
+        }
     }
 
 

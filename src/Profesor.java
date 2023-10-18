@@ -16,6 +16,7 @@ public class Profesor {
         this.codigo = codigo;
     }
 
+
     public void ingresarProfesor(int p){
         Scanner sc = new Scanner(System.in);
         System.out.println("Ingrese nombre del profesor "+p+":");
@@ -25,6 +26,8 @@ public class Profesor {
         System.out.println("Ingrese el idBanner"+p+":");
         this.codigo = sc.nextInt();
     }
+
+
 
 
    /* public void mostrarProfesor (){

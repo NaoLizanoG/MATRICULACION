@@ -41,31 +41,21 @@ public class Estudiante {
         System.out.println("La cedula es:"+cedula);
     }
 
-    public void imprimirTodosProfesores (){
-        System.out.println("Profesor 1 de la materia: "+materia1.getNombre()+" es: "+materia1.getProfesor1().getNombre());
-        System.out.println("Profesor 2 de la materia: "+materia3.getNombre()+" es: "+materia3.getProfesor2().getNombre());
-        System.out.println("Profesor 3 de la materia: "+materia2.getNombre()+" es: "+materia2.getProfesor3().getNombre());
-    }
-    public void materiaEstudiante(){
-        Scanner sc = new Scanner(System.in);
-        System.out.println("Ingrese Materia 1: \n");
-        String materia1 = sc.next();
-        System.out.println("Ingrese Materia 2: \n");
-        String materia2 = sc.next();
-        System.out.println("Ingrese Materia 3: \n");
-        String materia3 = sc.next();
-
-    }
-
-    public void mostrarDatosMaterias(Materia materia, int i){
+    public void mostrarDatosMaterias(Materia materia, int i, int a){
 
        switch (i){
             case 1:
-                materia.mostrarMaterias(1);
+                materia.mostrarMaterias(materia, 1,a );
+                break;
             case 2:
-                materia.mostrarMaterias(2);
+                materia.mostrarMaterias(materia, 2, a);
+                break;
             case 3:
-                 materia.mostrarMaterias(3);
+                 materia.mostrarMaterias(materia,3,a);
+                break;
+           default:
+               System.out.println("Número no válido");
+               break;
     }}
 
     public int getMatricula() {

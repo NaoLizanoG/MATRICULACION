@@ -6,8 +6,7 @@ public class Main {
     public static void main(String[] args) {
         System.out.println("---------------------------------------------------------");
         System.out.println("Bienvenido a tu sistema de matriculación");
-         Estudiante estudiante1=new Estudiante();
-         estudiante1.ingresarDatos();
+        System.out.println("Para iniciar, ingrese los datos de las materias correspondientes a este semestre");
 
 
          Materia materia1= new Materia();
@@ -20,19 +19,47 @@ public class Main {
 
         Materia materia3= new Materia();
         materia3.ingresarMateria(3);
-        materia2.datosProfesores();
+        materia3.datosProfesores();
+
+        System.out.println("Ingrese los datos de los estudiantes");
+        Estudiante estudiante1=new Estudiante();
+        estudiante1.ingresarDatos();
+
+        System.out.println("Decida el profesor de la materia 1");
+        Scanner sc = new Scanner(System.in);
+        int mat1 = sc.nextInt();
+        System.out.println("Decida el profesor de la materia 2");
+        int mat2 = sc.nextInt();
+        System.out.println("Decida el profesor de la materia 3");
+        int mat3 = sc.nextInt();
+
 
         System.out.println("---------------------------------------------------------");
         System.out.println("---------------------------------------------------------");
         System.out.println("---------------------------------------------------------");
         System.out.println("Sus datos son:");
         estudiante1.imprimirDatos(1);
+
+        int i=0;
+        do {
+
         System.out.println("Ingrese el número de materia del que quiera conocer los datos");
-        Scanner sc = new Scanner(System.in);
-        int i = sc.nextInt();
-        estudiante1.mostrarDatosMaterias(materia1, 1);
+        i = sc.nextInt();
+        switch (i) {
+            case 1:
+                estudiante1.mostrarDatosMaterias(materia1, i, mat1);
+                break;
+            case 2:
+                estudiante1.mostrarDatosMaterias(materia2, i, mat2);
+                break;
+            case 3:
+                estudiante1.mostrarDatosMaterias(materia3, i, mat3);
+                break;
+            default:
+                System.out.println("Número inválido");
+        }
 
 
-
+        }while (i>0 && i<4);
     }
 }
