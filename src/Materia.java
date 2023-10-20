@@ -44,17 +44,11 @@ public class Materia {
         System.out.println("La materia "+numMateria+" es: "+nombre);
         System.out.println("El codigo es: "+codigo);
         System.out.println("La materia tiene "+numhoras+" horas");
-        switch (numProfesor) {
-            case 1:
             System.out.println("Su profesor asignado es " + mater.profesor1.getNombre());
-            break;
-            case 2:
-                System.out.println("Su profesor asignado es " + mater.profesor2.getNombre());
-                break;
-            case 3:
-                System.out.println("Su profesor asignado es " + mater.profesor3.getNombre());
-                break;
-        }
+    }
+
+    public void bienvenido(){
+        System.out.println("Bienvenido a tu sistema de matriculacion");
     }
 
 

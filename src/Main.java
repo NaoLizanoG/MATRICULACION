@@ -5,9 +5,10 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
 
-        Bienvenida Bienvenida = new Bienvenida();
+
         // llamar a materia (a las 3 con sus respectivos datos de profesores)
          Materia materia1= new Materia();
+         materia1.bienvenido();
          materia1.ingresarMateria(1);
          materia1.datosProfesores();
 
@@ -25,20 +26,18 @@ public class Main {
       /*  System.out.println("Ingrese los datos de los estudiantes");
         Estudiante estudiante1=new Estudiante();
         estudiante1.ingresarDatos();*/
+
         Estudiante estudiante1 = new Estudiante();
-        InputsDatosEST inputsDatosEST= new InputsDatosEST();
+        estudiante1.ingresarDatos();
+
+                estudiante1.imprimirDatos(1);
 
 
+                estudiante1.mostrarDatosMaterias(materia1, 1);
 
+                estudiante1.mostrarDatosMaterias(materia2, 2);
 
-        SeparadorIO separadorIO = new SeparadorIO();
-
-
-                estudiante1.mostrarDatosMaterias(materia1);
-
-                estudiante1.mostrarDatosMaterias(materia2);
-
-                estudiante1.mostrarDatosMaterias(materia3);
+                estudiante1.mostrarDatosMaterias(materia3, 3);
 
 
         }

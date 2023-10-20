@@ -23,6 +23,7 @@ public class Estudiante {
     }*/
 
     public void ingresarDatos(){
+        System.out.println("Ingrese los datos del estudiante");
         Scanner sc = new Scanner(System.in);
         System.out.println("Ingrese el nombre del estudiante: \n");
         this.nombre = sc.next();
@@ -41,15 +42,13 @@ public class Estudiante {
         System.out.println("La cedula es:"+cedula);
     }
 
-    public void mostrarDatosMaterias(Materia materia){
+    public void mostrarDatosMaterias(Materia materia, int i){
 
-                materia.mostrarMaterias(materia, 1, 1 );
+                materia.mostrarMaterias(materia, i, 1 );
 
-                materia.mostrarMaterias(materia, 2, 1);
-
-         materia.mostrarMaterias(materia,3,1);
 
     }
+
 
 
 
