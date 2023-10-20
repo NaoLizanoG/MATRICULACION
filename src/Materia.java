@@ -4,9 +4,10 @@ public class Materia {
     private String nombre="";
     private int codigo=0;
     private int numhoras=0;
-    private Profesor profesor1;
+    Profesor[] arregloProfe = new Profesor[3];
+    /*private Profesor profesor1;
     private Profesor profesor2;
-    private Profesor profesor3;
+    private Profesor profesor3;*/
 
 
     public Materia(){
@@ -33,18 +34,21 @@ public class Materia {
 
     public void datosProfesores(){
 
-        profesor1 = new Profesor();
+        Profesor profesor1 = new Profesor();
+        arregloProfe[0]=profesor1;
         profesor1.ingresarProfesor(1);
-        profesor2 = new Profesor();
+        Profesor profesor2 = new Profesor();
+        arregloProfe[1]=profesor2;
         profesor2.ingresarProfesor(2);
-        profesor3 = new Profesor();
+        Profesor profesor3 = new Profesor();
+        arregloProfe[2]=profesor3;
         profesor3.ingresarProfesor(3);
         }
     public void mostrarMaterias(Materia mater, int numMateria, int numProfesor){
         System.out.println("La materia "+numMateria+" es: "+nombre);
         System.out.println("El codigo es: "+codigo);
         System.out.println("La materia tiene "+numhoras+" horas");
-            System.out.println("Su profesor asignado es " + mater.profesor1.getNombre());
+        System.out.println("Su profesor asignado es " + mater.arregloProfe[numProfesor].getNombre());
     }
 
     public void bienvenido(){
@@ -76,7 +80,7 @@ public class Materia {
         this.numhoras = numhoras;
     }
 
-    public Profesor getProfesor1() {
+   /* public Profesor getProfesor1() {
         return profesor1;
     }
 
@@ -99,7 +103,7 @@ public class Materia {
 
     public void setProfesor3(Profesor profesor3) {
         this.profesor3 = profesor3;
-    }
+    }*/
 }
 
 

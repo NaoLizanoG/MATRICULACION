@@ -1,12 +1,16 @@
+import java.util.Arrays;
 import java.util.Scanner;
 public class Estudiante {
     private  int matricula=0;
     private int cedula=0;
     private String nombre="";
     private String apellido="";
-    private Materia materia1;
+
+    Materia [] arregloMateria = new Materia[3];
+
+    /*private Materia materia1;
     private Materia materia2;
-    private Materia materia3;
+    private Materia materia3;*/
 
     public Estudiante(){
 
@@ -44,12 +48,9 @@ public class Estudiante {
 
     public void mostrarDatosMaterias(Materia materia, int i){
 
-                materia.mostrarMaterias(materia, i, 1 );
-
+        materia.mostrarMaterias(materia, i, 1 );
 
     }
-
-
 
 
     public int getMatricula() {
@@ -84,7 +85,7 @@ public class Estudiante {
         this.apellido = apellido;
     }
 
-    public Materia getMateria1() {
+    /*public Materia getMateria1() {
         return materia1;
     }
 
@@ -106,6 +107,6 @@ public class Estudiante {
 
     public void setMateria3(Materia materia3) {
         this.materia3 = materia3;
-    }
+    }*/
 
 }

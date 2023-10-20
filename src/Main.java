@@ -22,11 +22,6 @@ public class Main {
 
 
 
-
-      /*  System.out.println("Ingrese los datos de los estudiantes");
-        Estudiante estudiante1=new Estudiante();
-        estudiante1.ingresarDatos();*/
-
         Estudiante estudiante1 = new Estudiante();
         estudiante1.ingresarDatos();
 
