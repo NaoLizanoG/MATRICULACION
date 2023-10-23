@@ -29,13 +29,6 @@ public class Profesor {
 
 
 
-
-   /* public void mostrarProfesor (){
-        System.out.println("El profesor de la materia  es: "+nombre);
-        System.out.println("El codigo del maestro es: "+codigo);
-        System.out.println("El telefono del maestro es "+cedula);
-    }*/
-
     public String getNombre() {
         return nombre;
     }

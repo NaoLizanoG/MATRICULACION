@@ -5,22 +5,13 @@ public class Materia {
     private int codigo=0;
     private int numhoras=0;
     Profesor[] arregloProfe = new Profesor[3];
-    /*private Profesor profesor1;
-    private Profesor profesor2;
-    private Profesor profesor3;*/
+
 
 
     public Materia(){
     }
 
-    /*public Materia(String nombre, int codigo, int numhoras, Profesor profesor1, Profesor profesor2, Profesor profesor3) {
-        this.nombre = nombre;
-        this.codigo = codigo;
-        this.numhoras = numhoras;
-        this.profesor1 = profesor1;
-        this.profesor2 = profesor2;
-        this.profesor3= profesor3;
-    }*/
+
 
     public void ingresarMateria(int m){
         Scanner sc = new Scanner(System.in);
@@ -80,30 +71,7 @@ public class Materia {
         this.numhoras = numhoras;
     }
 
-   /* public Profesor getProfesor1() {
-        return profesor1;
-    }
 
-    public void setProfesor1(Profesor profesor1) {
-        this.profesor1 = profesor1;
-    }
-
-    public Profesor getProfesor2() {
-        return profesor2;
-    }
-
-    public void setProfesor2(Profesor profesor2) {
-        this.profesor2 = profesor2;
-    }
-
-
-    public Profesor getProfesor3() {
-        return profesor3;
-    }
-
-    public void setProfesor3(Profesor profesor3) {
-        this.profesor3 = profesor3;
-    }*/
 }
 
 

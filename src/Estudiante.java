@@ -8,23 +8,12 @@ public class Estudiante {
 
     Materia [] arregloMateria = new Materia[3];
 
-    /*private Materia materia1;
-    private Materia materia2;
-    private Materia materia3;*/
 
     public Estudiante(){
 
     }
 
-    /*public Estudiante(int matricula, int cedula, String nombre, String apellido, Materia materia1, Materia materia2, Materia materia3){
-        this.cedula=cedula;
-        this.matricula=matricula;
-        this.nombre=nombre;
-        this.apellido=apellido;
-        this.materia1=materia1;
-        this.materia2=materia2;
-        this.materia3=materia3;
-    }*/
+
 
     public void ingresarDatos(){
         System.out.println("Ingrese los datos del estudiante");
@@ -85,28 +74,6 @@ public class Estudiante {
         this.apellido = apellido;
     }
 
-    /*public Materia getMateria1() {
-        return materia1;
-    }
 
-    public void setMateria1(Materia materia1) {
-        this.materia1 = materia1;
-    }
-
-    public Materia getMateria2() {
-        return materia2;
-    }
-
-    public void setMateria2(Materia materia2) {
-        this.materia2 = materia2;
-    }
-
-    public Materia getMateria3() {
-        return materia3;
-    }
-
-    public void setMateria3(Materia materia3) {
-        this.materia3 = materia3;
-    }*/
 
 }
